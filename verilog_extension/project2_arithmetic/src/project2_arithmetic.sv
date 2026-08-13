@@ -1,12 +1,9 @@
 // project2_arithmetic.sv
 // Nand2Tetris Project 2 arithmetic chips in SystemVerilog
 
-// -------------------------
+
 // Half Adder
-// Adds two 1-bit inputs.
-// sum   = right bit of a + b
-// carry = left bit of a + b
-// -------------------------
+
 module ntt_half_adder(
     input  logic a,
     input  logic b,
@@ -20,11 +17,9 @@ module ntt_half_adder(
 endmodule
 
 
-// -------------------------
+
 // Full Adder
-// Adds three 1-bit inputs: a + b + c.
-// c is the carry-in.
-// -------------------------
+
 module ntt_full_adder(
     input  logic a,
     input  logic b,
@@ -55,11 +50,9 @@ module ntt_full_adder(
 
 endmodule
 
-// -------------------------
+
 // Add16
-// Adds two 16-bit numbers.
-// Final carry is ignored, just like Nand2Tetris.
-// -------------------------
+
 module ntt_add16(
     input  logic [15:0] a,
     input  logic [15:0] b,
@@ -90,11 +83,9 @@ module ntt_add16(
 
 endmodule
 
-// -------------------------
+
 // Inc16
-// Increments a 16-bit number.
-// out = in + 1
-// -------------------------
+
 module ntt_inc16(
     input  logic [15:0] in,
     output logic [15:0] out
@@ -110,8 +101,7 @@ endmodule
 
 // -------------------------
 // ALU
-// Nand2Tetris-style ALU
-//
+
 // Inputs:
 // x, y = 16-bit data inputs
 // zx = zero x
